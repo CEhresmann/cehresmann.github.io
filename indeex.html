@@ -1,68 +1,150 @@
 <!DOCTYPE html>
 <html>
 <head>
- <title>Резюме</title>
- <style>
-  body {
-   font-family: Times New Roman, sans-serif;
-   margin: 20px;
-  }
- </style>
+  <title>Резюме</title>
+  <style>
+    /* Global styles */
+    body {
+      font-family: 'Times New Roman', sans-serif;
+      margin: 20px;
+      background-color: #f9f9f9; /* added a light gray background */
+    }
+
+    /* Header styles */
+    h1 {
+      font-size: 36px;
+      color: #220926;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    /* Section styles */
+    h2 {
+      font-size: 24px;
+      color: #220926;
+      font-weight: bold;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    /* Contact info styles */
+    .contact-info {
+      font-size: 18px;
+      color: #666;
+    }
+
+    /* Work experience styles */
+    .work-experience {
+      margin-top: 20px;
+    }
+
+    .work-experience h3 {
+      font-size: 20px;
+      color: #220926;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .work-experience ul {
+      margin-top: 10px;
+    }
+
+    /* Education styles */
+    .education {
+      margin-top: 20px;
+    }
+
+    .education h3 {
+      font-size: 20px;
+      color: #220926;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    /* Literature and courses styles */
+    .literature-and-courses {
+      margin-top: 20px;
+    }
+
+    .literature-and-courses ul {
+      columns: 2; /* added a two-column layout for literature and courses */
+      column-gap: 20px;
+    }
+  </style>
 </head>
 <body>
- <h1><font size="6" color="#220926" face="serif">Трубинов Тимофей Сергеевич</font></h1>
- <p>Контактная информация:</p>
- <ul>
-  <li>Телефон: +79529905973</li>
-  <li>Email: trubinov04@gmail.com</li>
-  <li>GitHub: https://github.com/CEhresmann</li>
-  <li>Местоположение: Калининградская обл., Калининград</li>
- </ul>
- <h2><font size="5" color="#220926" face="serif">Навыки</font></h2>
- <ul>
-  <li>Языки программирования: GO, язык С</li>
-  <li>Базы данных: SQL</li>
-  <li>СУБД: PostgreSQL, MySQL</li>
-  <li>ООП, REST API, CI/CD</li>
-  <li>Алгоритмы и структуры данных</li>
-  <li>Английский B2, навыки чтения технической документации и специализированной литературы</li>
-  <li>Коммуникабельность</li>
- </ul>
- <h2><font size="5" color="#220926" face="serif">Опыт работы</font></h2>
- <ul>
-  <li>
-   <h3>ДвериЛэнд, г. Смоленск – системный администратор</h3>
-   <p>Ноябрь 2021 — май 2022</p>
-   <ul>
-    <li>Обслуживание сервера</li>
-    <li>Работа с 1С и настройка</li>
-    <li>Обслуживание рабочей техники</li>
-   </ul>
-  </li>
-  </li>
- </ul>
- <h2><font size="5" color="#220926" face="serif">Образование</font></h2>
- <ul>
-  <li>
-   <h3>БФУ им. И. Канта, Калининград – бакалавриат, 3 курс, 2022-2026</h3>
-  </li>
- </ul>
- <h2><font size="5" color="#220926" face="serif">Литература и курсы</font></h2>
- <ul>
-  <li>Продвинутые алгоритмы и структуры данных, Марчелло Ла Рокка</li>
-  <li>Язык программирования Go, Б. Керниган, Алан О.Донован</li>
-  <li>Язык программирования Си, Б. Керниган, Денис Ритчи</li>
-  <li>Теоритический минимум по computer scince (сети, криптография и data science), Владстон Ф.Фило</li>
-  <li>Algorithms + data structures = programs, Writh Niklaus</li>
-  <li>Прикладная логика, Н. Н. Непейвода</li>
-  <li>Приемы объектно-ориентированного проектирования. Паттерны проектирования, Гамма Эрих</li>
-  <li>Летняя школа от ВШЭ “Логика и формальная философия”</li>
-  <li>Школа21 от сбербанка, основное обучение</li>
-  <li>PTStart от Positive technologies</li>
-  <li>Полугодовой курс от ВШЭ “Введение в эпистемическую логику и формальную эпистемологию”</li>
-  <li>A tour of GO</li>
-  <li>Go documentation</li>
-  <li>Документация языка С</li>
- </ul>
+  <h1>Трубинов Тимофей Сергеевич</h1>
+  <p class="contact-info">Контактная информация:</p>
+  <ul>
+    <li>Телефон: +79529905973</li>
+    <li>Email: trubinov04@gmail.com</li>
+    <li>GitHub: https://github.com/CEhresmann</li>
+    <li>Местоположение: Калининградская обл., Калининград</li>
+  </ul>
+
+  <h2>Навыки</h2>
+  <ul>
+    <li>Языки программирования: GO, язык С</li>
+    <li>Базы данных: SQL</li>
+    <li>СУБД: PostgreSQL, MySQL</li>
+    <li>ООП, REST API, CI/CD</li>
+    <li>Алгоритмы и структуры данных</li>
+    <li>Английский B2, навыки чтения технической документации и специализированной литературы</li>
+    <li>Коммуникабельность</li>
+  </ul>
+
+  <div class="work-experience">
+    <h2>Опыт работы</h2>
+    <ul>
+      <li>
+        <h3>ДвериЛэнд, г. Смоленск – системный администратор</h3>
+        <p>Ноябрь 2021 — май 2022</p>
+        <ul>
+          <li>Обслуживание сервера</li>
+          <li>Работа с 1С и настройка</li>
+          <li>Обслуживание рабочей техники</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class="education">
+    <h2>Образование</h2>
+    <ul>
+      <li>
+        <h3>БФУ им. И. Канта, Калининград – бакалавриат, 3 курс, 2022-2026</h3>
+      </li>
+    </ul>
+  </div>
+
+  <div class="literature-and-courses">
+    <h2>Литература и курсы</h2>
+    <ul>
+      <li>Продвинутые алгоритмы и структуры данных, Марчелло Ла Рокка</li>
+      <li>Язык программирования Go, Б. Керниган, Алан О.Донован</li>
+      <li>Язык программирования Си, Б. Керниган, Денис Ритчи</li>
+      <li>Теоритический минимум по computer scince (сети, криптография и data science), Владстон Ф.Фило</li>
+      <li>Algorithms + data structures = programs, Writh Niklaus</li>
+      <li>Прикладная логика, Н. Н. Непейвода</li>
+      <li>Приемы объектно-ориентированного проектирования. Паттерны проектирования, Гамма Эрих</li>
+      <li>Летняя школа от ВШЭ “Логика и формальная философия”</li>
+      <li>Школа21 от сбербанка, основное обучение</li>
+      <li>PTStart от Positive technologies</li>
+      <li>Полугодовой курс от ВШЭ “Введение в эпистемическую логику и формальную эпистемологию”</li>
+      <li>A tour of GO</li>
+      <li>Go documentation</li>
+      <li>Документация языка С</li>
+    </ul>
+  </div>
 </body>
 </html>
