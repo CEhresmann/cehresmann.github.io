@@ -1,0 +1,95 @@
+/* style.css */
+
+@font-face {
+  font-family: 'ABCDiatypePlusVariable';
+  src: url('ABCDiatypePlusVariable.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Times New Roman', sans-serif;
+  margin: 20px;
+  background-image: linear-gradient(to bottom, #f2f2f2, #e5e5e5); 
+  background-position: 0% 100%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 20px;
+}
+
+.photo-container {
+  grid-column: 1;
+}
+
+.text-container {
+  grid-column: 2;
+}
+
+.photo {
+  width: 300px;
+  height: 300px;
+  border-radius: 25%; 
+  margin: 10px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.contact-info {
+  font-size: 18px;
+  color: #666;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.work-experience {
+  margin-top: 20px;
+}
+
+.work-experience h3 {
+  font-size: 20px;
+  color: #220926;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.literature-and-courses {
+  margin-top: 20px;
+}
+
+.literature-and-courses ul {
+  columns: 2;
+  column-gap: 20px;
+}
+
+.separator {
+  height: 1px;
+  background-color: #ccc;
+  margin: 20px 0;
+}
