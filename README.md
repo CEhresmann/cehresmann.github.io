@@ -1,3 +1,3 @@
 That's just my litle CV
 
-Remember, I'm just starting, don't judge strictly 
+ I'm just starting, don't judge strictly 
